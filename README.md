@@ -51,7 +51,7 @@ Extract 1 frame per second from the raw 360 video:
 ```bash
 ffmpeg -i ~/Documents/gsplat_project/Raw_Videos/desk_acfr_robot.mp4 \
   -map 0:0 -vf "fps=1" \
-  ~/Documents/gsplat_project/FFMPEG_processed/desk_acfr_robot/front/front_%04d.jpg
+  ~/Documents/gsplat_project/FFMPEG_processed/desk_acfr_robot/front_%04d.jpg
 ```
 
 > Adjust `fps=1` if you need denser coverage. For fast-moving scenes, try `fps=2` or `fps=3`.
